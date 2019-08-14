@@ -12,5 +12,8 @@ module.exports = {
   },
   optimization: {
     minimize: true
-  }
+	},
+	globals: {
+		expressionAtlasHeatmapHighcharts: true
+	}
 };

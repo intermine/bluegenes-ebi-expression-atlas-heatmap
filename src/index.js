@@ -1,4 +1,6 @@
-var expressionAtlasHeatmap = require('expression-atlas-heatmap-highcharts');
+// var expressionAtlasHeatmap = require('expression-atlas-heatmap-highcharts');
+
+/* eslint-ignore */
 
 // make sure to export main, with the signature
 function main(el, service, imEntity, state, config) {
@@ -7,7 +9,7 @@ function main(el, service, imEntity, state, config) {
 		throw new Error('Call main with correct signature');
 	}
 
-	expressionAtlasHeatmap.render({
+	expressionAtlasHeatmapHighcharts.render({
 		query: {
 			gene: 'ENSG00000066279'
 		},
