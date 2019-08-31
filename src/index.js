@@ -14,14 +14,14 @@ function main(el, service, imEntity, state, config) {
 	document.head.appendChild(script1);
 	document.head.appendChild(script2);
 
-	setTimeout(() => {
+	script2.onload = () => {
 		expressionAtlasHeatmapHighcharts.render({
 			query: {
 				gene: 'ENSG00000066279' || imEntity.value
 			},
 			target: el.id
 		});
-	}, 1000);
+	};
 }
 
 module.exports = { main };
